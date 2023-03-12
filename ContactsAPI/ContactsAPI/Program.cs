@@ -2,6 +2,7 @@ using ContactsAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+string s = "Manish";
 // Add services to the container.
 
 builder.Services.AddControllers();
