@@ -25,7 +25,7 @@ namespace ContactsAPI.Controllers
         
         [HttpGet]
         [Route("/jenkins")]
-        public string DeployedViaJenkins()
+        public ActionResult<string> DeployedViaJenkins()
         {
             return Ok("Deployed via jenkins");
         }
