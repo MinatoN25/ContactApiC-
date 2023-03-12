@@ -22,6 +22,13 @@ namespace ContactsAPI.Controllers
             return Ok(await dbContext.Contacts.ToListAsync());
 
         }
+        
+        [HttpGet]
+        [Route("/jenkins")]
+        public string DeployedViaJenkins()
+        {
+            return Ok("Deployed via jenkins");
+        }
 
         [HttpPost]
         public async Task<IActionResult> AddContact(AddContactRequest addContactRequest)
