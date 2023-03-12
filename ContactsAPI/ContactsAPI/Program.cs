@@ -2,8 +2,6 @@ using ContactsAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-//added comment
-
 // Add services to the container.
 
 builder.Services.AddControllers();
